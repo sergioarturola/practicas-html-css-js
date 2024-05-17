@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Posicion</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		.container{
+			background-color: skyblue;
+			width: 500px;
+			height: 500px;
+			margin: 0 auto;
+			margin-top: 100px;
+			/*para que las cajas se alineen con container y no con body
+			  si no activamos ninguna propiedad las cajas se alinean con body*/
+			position: relative;
+		}
+
+		.caja{
+			background-color: royalblue;
+			border: 1px solid #000;
+			color: #fff;
+			text-align: center;
+			width: 100px;
+			height: 100px;
+			padding: 25px;
+			font-family: sans-serif;
+			
+		}
+
+		#uno{
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+
+		#tres{
+			position: absolute;
+			bottom: 0;
+			right: 0;
+		}
+
+		#cuatro{
+			position: absolute;
+			bottom: 0;
+			left: 0;
+		}
+
+		#left{
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="caja" id="uno">UNO</div>
+		<div class="caja"id="dos">DOS</div>
+		<div class="caja" id="tres">TRES</div>
+		<div class="caja" id="cuatro">CUATRO</div>
+
+	</div>
+</body>
+</html>
